@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="BixoPlayer — premium cinematic streaming platform UI and backend-ready architecture.">
+  <title>BixoPlayer — Your Next Story Starts Here</title><link rel="icon" href="assets/images/company-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+<div class="app-shell">
+<header class="navbar" id="navbar">
+  <a class="brand" href="#home" aria-label="BixoPlayer home"><img class="company-logo" src="assets/images/company-logo.png" alt="BIXOPLAY - Time Well Watched"><span class="brand-name" aria-hidden="true">Bixo<span>Player</span></span></a>
+  <nav class="nav-links" aria-label="Primary navigation">
+    <a href="#home">Home</a><a href="#movies">Movies</a><a href="#series">Series</a><a href="#live">Live TV</a><a href="#sports">Sports</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions"><button class="icon-btn" id="searchToggle" aria-label="Search">⌕</button><button class="icon-btn" id="themeToggle" aria-label="Toggle theme">☼</button><button class="btn btn-ghost" id="loginBtn">Login</button><button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button></div>
+</header>
+<div class="mobile-nav" id="mobileNav"><a href="#home">Home</a><a href="#movies">Movies</a><a href="#series">Series</a><a href="#live">Live TV</a><a href="#sports">Sports</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+
+<section class="hero" id="home">
+  <video class="hero-video" autoplay muted loop playsinline poster="assets/images/hero-poster.jpg"><source src="assets/videos/hero.mp4" type="video/mp4"></video>
+  <div class="hero-fallback"></div><div class="hero-overlay"></div>
+  <div class="hero-content reveal"><span class="eyebrow">BIXOPLAYER ORIGINAL EXPERIENCE</span><h1>Your Next <em>Story</em> Starts Here</h1><p>Watch. Discover. Feel. Repeat.</p><div class="hero-actions"><button class="btn btn-primary" id="watchNow">▶ Watch Now</button><a class="btn btn-secondary" href="#pricing">Explore Plans</a></div><div class="hero-meta"><span>4K Ultra HD</span><span>•</span><span>Dolby Atmos</span><span>•</span><span>Multi-device</span></div></div>
+  <div class="hero-scroll">Scroll to explore <span>↓</span></div>
+</section>
+
+<section class="section" id="categories"><div class="section-heading reveal"><div><span class="eyebrow">EXPLORE</span><h2>Everything you love, <span>in one place.</span></h2></div><p>Live moments, cinematic stories, and the next thing you’ll binge.</p></div><div class="category-grid" id="categoryGrid"></div></section>
+
+<section class="section compact" id="movies"><div class="section-heading reveal"><div><span class="eyebrow">CURATED FOR YOU</span><h2>Trending Movies</h2></div><button class="text-btn" id="browseMovies">View all →</button></div><div class="content-grid" id="moviesGrid"></div></section>
+<section class="section compact" id="series"><div class="section-heading reveal"><div><span class="eyebrow">BINGE-WORTHY</span><h2>Popular Series</h2></div><button class="text-btn">View all →</button></div><div class="content-grid" id="seriesGrid"></div></section>
+
+<section class="section live-section" id="live"><div class="section-heading reveal"><div><span class="eyebrow">HAPPENING NOW</span><h2>Live TV</h2></div><span class="live-pulse"><i></i> Live now</span></div><div class="channel-grid" id="channelsGrid"></div></section>
+<section class="section sports-section" id="sports"><div class="section-heading reveal"><div><span class="eyebrow">DON’T MISS THE ACTION</span><h2>Live Sports</h2></div></div><div class="sports-grid" id="sportsGrid"></div></section>
+
+<section class="section pricing-section" id="pricing"><div class="center-heading reveal"><span class="eyebrow">SIMPLE & TRANSPARENT</span><h2>Choose Your <span>Plan</span></h2><p>Simple pricing. Powerful entertainment.</p></div><div class="pricing-grid" id="pricingGrid"></div></section>
+
+<section class="section faq-section" id="faq"><div class="section-heading reveal"><div><span class="eyebrow">NEED ANSWERS?</span><h2>Frequently Asked Questions</h2></div></div><div class="faq-list" id="faqList"></div></section>
+<section class="section contact-section" id="contact"><div class="contact-card reveal"><div><span class="eyebrow">WE’RE HERE FOR YOU</span><h2>Need Help?</h2><p>Talk to our support team whenever you need a hand with plans, payments, or your viewing experience.</p></div><div class="contact-actions"><a class="btn btn-primary" id="whatsappLink" target="_blank" rel="noopener">Chat on WhatsApp</a><a class="btn btn-secondary" id="telegramLink" target="_blank" rel="noopener">Open Telegram</a><a class="btn btn-ghost" id="facebookLink" target="_blank" rel="noopener">Visit Facebook</a><a class="btn btn-ghost" href="mailto:support@bixoplayer.example">Email Support</a></div></div></section>
+
+<footer class="footer"><div class="footer-main"><div><a class="brand" href="#home" aria-label="BixoPlayer home"><img class="company-logo footer-logo" src="assets/images/company-logo.png" alt="BIXOPLAY - Time Well Watched"></a><p>Premium streaming built around discovery, comfort, and unforgettable stories.</p></div><div><h4>Explore</h4><a href="#movies">Movies</a><a href="#series">Series</a><a href="#live">Live TV</a><a href="#sports">Sports</a></div><div><h4>Company</h4><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#contact">Support</a></div><div><h4>Connect</h4><a id="footerWhatsapp">WhatsApp</a><a id="footerTelegram">Telegram</a><a id="footerFacebook">Facebook</a></div></div><div class="footer-bottom"><span>© 2026 BixoPlayer. All Rights Reserved.</span><span>Built for a premium viewing experience.</span></div></footer>
+
+<div class="search-overlay" id="searchOverlay" aria-hidden="true"><div class="search-box"><button class="close-btn" id="closeSearch">×</button><span class="eyebrow">SEARCH BIXOPLAYER</span><h2>Find your next watch.</h2><input id="searchInput" placeholder="Search movies, series, channels, sports…" autocomplete="off"><div class="search-status" id="searchStatus"></div><div class="search-results" id="searchResults"></div></div></div>
+
+<div class="modal" id="subscriptionModal" aria-hidden="true"><div class="modal-panel"><button class="close-btn" data-close="subscriptionModal">×</button><div class="modal-header"><span class="eyebrow">SECURE CHECKOUT</span><h2>Start Your BixoPlayer Plan</h2><p>Choose your plan and continue to our real payment backend.</p></div><div id="selectedPlanSummary"></div><form id="subscriptionForm"><div class="form-grid"><label>Name<input name="name" required></label><label>Email<input name="email" type="email" required></label><label>Phone<input name="phone" required></label><label>Country<input name="country" required></label></div><label>Payment Method<select name="paymentMethod"><option value="stripe">Card / Stripe</option><option value="provider">Local Payment Provider</option></select></label><button class="btn btn-primary full" type="submit">Continue to Payment →</button><p class="form-note">No payment is processed by the frontend. Checkout is created by the backend.</p></form></div></div>
+<div class="modal" id="detailsModal" aria-hidden="true"><div class="modal-panel media-modal"><button class="close-btn" data-close="detailsModal">×</button><div id="detailsContent"></div></div></div>
+<div class="modal" id="successModal" aria-hidden="true"><div class="success-panel"><div class="success-icon">✓</div><h2>Subscription Successful!</h2><p>Welcome to BixoPlayer Pro 🎉<br>Your subscription is now active.</p><button class="btn btn-primary" data-close="successModal">Start Watching</button></div></div>
+<div class="modal" id="errorModal" aria-hidden="true"><div class="success-panel"><div class="error-icon">!</div><h2>Something went wrong</h2><p>Please try again or contact support.</p><div class="inline-actions"><button class="btn btn-primary" id="retryPayment">Try Again</button><a class="btn btn-ghost" id="errorSupport">Contact Support</a></div></div></div>
+<div class="modal" id="whatsappWelcomeModal" aria-hidden="true"><div class="success-panel whatsapp-welcome-panel"><div class="success-icon whatsapp-icon">💬</div><span class="eyebrow">BIXOPLAYER SUPPORT</span><h2>مرحبًا بك في BixoPlayer 👋</h2><p>نسعد بخدمتك عبر WhatsApp.<br><strong>خدمة عملاء 24 ساعة تعتني بك.</strong></p><div class="inline-actions"><a class="btn btn-primary" id="welcomeWhatsapp" target="_blank" rel="noopener">التواصل عبر WhatsApp</a><button class="btn btn-ghost" data-close="whatsappWelcomeModal">إغلاق</button></div></div></div>
+
+<a class="whatsapp-fab" id="floatingWhatsapp" href="#" aria-label="Chat on WhatsApp">☎</a>
+<div class="chatbot" id="chatbot"><div class="chat-window" id="chatWindow"><div class="chat-header"><div><strong>BixoPlayer Assistant</strong><span><i></i> Online</span></div><button class="close-btn" id="closeChat">×</button></div><div class="chat-messages" id="chatMessages"></div><div class="quick-actions" id="quickActions"></div><a class="chat-support-btn" id="chatWhatsappSupport" target="_blank" rel="noopener">💬 تواصل مع خدمة العملاء عبر WhatsApp</a><form class="chat-input" id="chatForm"><input id="chatInput" placeholder="Type your message…" autocomplete="off"><button aria-label="Send">➤</button></form></div><button class="chat-fab" id="chatFab" aria-label="Open BixoPlayer Assistant">💬</button></div>
+<div class="toast-container" id="toastContainer"></div>
+</div>
+<script type="module" src="js/main.js"></script>
+</body></html>
