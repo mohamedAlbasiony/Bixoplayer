@@ -97,3 +97,7 @@ All WhatsApp buttons—including Contact, Footer, Error Support, and the floatin
 
 ### WhatsApp privacy
 The frontend intentionally does not contain the WhatsApp phone number. All public WhatsApp buttons use the wa.me/message support link, so the phone number is not exposed in HTML attributes or frontend JavaScript. If a custom prefilled message is needed later, generate it server-side.
+
+🚀 Live Demo & Repository
+Live Demo: [https://mohamedalbasiony.github.io/Bixoplayer/]
+
