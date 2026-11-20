@@ -100,4 +100,5 @@ The frontend intentionally does not contain the WhatsApp phone number. All publi
 
 🚀 Live Demo & Repository
 Live Demo: [https://mohamedalbasiony.github.io/Bixoplayer/]
+Cloudflare deployment update
 
