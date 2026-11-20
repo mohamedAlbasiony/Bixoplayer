@@ -53,5 +53,85 @@
 <div class="chatbot" id="chatbot"><div class="chat-window" id="chatWindow"><div class="chat-header"><div><strong>BixoPlayer Assistant</strong><span><i></i> Online</span></div><button class="close-btn" id="closeChat">×</button></div><div class="chat-messages" id="chatMessages"></div><div class="quick-actions" id="quickActions"></div><a class="chat-support-btn" id="chatWhatsappSupport" target="_blank" rel="noopener">💬 تواصل مع خدمة العملاء عبر WhatsApp</a><form class="chat-input" id="chatForm"><input id="chatInput" placeholder="Type your message…" autocomplete="off"><button aria-label="Send">➤</button></form></div><button class="chat-fab" id="chatFab" aria-label="Open BixoPlayer Assistant">💬</button></div>
 <div class="toast-container" id="toastContainer"></div>
 </div>
+  
+<!-- BIXOPLAY Official Notice Popup -->
+<div id="officialOverlay" class="official-overlay" hidden>
+  <section
+    class="official-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="officialTitle"
+    tabindex="-1"
+  >
+    <button
+      id="closeOfficialNotice"
+      class="official-close"
+      type="button"
+      aria-label="Close announcement"
+    >&times;</button>
+
+    <div class="official-symbol">✓</div>
+
+    <p class="official-eyebrow">OFFICIAL CUSTOMER ANNOUNCEMENT</p>
+
+    <h2 id="officialTitle">Welcome to BIXOPLAY</h2>
+
+    <h3>Headquartered in Saudi Arabia</h3>
+
+    <p class="official-description">
+      BIXOPLAY's main operations are based in the
+      Kingdom of Saudi Arabia.
+    </p>
+
+    <p class="official-description">
+      For subscriptions, customer support, and service
+      inquiries, please contact our team through the
+      official numbers listed below.
+    </p>
+
+    <div class="official-domain">
+      🌐 Official Website:
+      <strong>bixoplay.net</strong>
+    </div>
+
+    <p class="official-contact-label">OFFICIAL WHATSAPP SUPPORT</p>
+
+    <div class="official-contact-buttons">
+      <a
+        class="official-whatsapp"
+        href="https://wa.me/966539677087"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp 1 · +966 53 967 7087
+      </a>
+
+      <a
+        class="official-whatsapp"
+        href="https://wa.me/966540787489"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        WhatsApp 2 · +966 54 078 7489
+      </a>
+    </div>
+
+    <p class="official-footer-note">
+      Please use the contact details published on this
+      website for official BIXOPLAY inquiries.
+    </p>
+
+    <button
+      id="dismissOfficialNotice"
+      class="official-dismiss"
+      type="button"
+    >
+      Continue to Website
+    </button>
+  </section>
+</div>
+
+<script src="/js/official-notice.js" defer></script>
+
 <script type="module" src="js/main.js"></script>
 </body></html>
