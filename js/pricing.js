@@ -26,7 +26,7 @@ export const fallbackPlans = [
     name: "Pro",
     subtitle: "More Content. More Variety. More Fun.",
     channels: 16200,
-    movies: 67500,
+    movies: 70000,
     series: 17500,
     popular: true,
 
@@ -39,9 +39,9 @@ export const fallbackPlans = [
     ],
 
     durations: [
-      { years: 1, price: 45 },
-      { years: 2, price: 75 },
-      { years: 3, price: 105 }
+      { years: 1, price: 50 },
+      { years: 2, price: 90 },
+      { years: 3, price: 125 }
     ]
   }
 ];
