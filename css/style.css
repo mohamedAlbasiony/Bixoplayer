@@ -1524,6 +1524,392 @@ html[data-theme=light] .hero-scroll span{color:#101322}
 }
 
 
+/* ==========================================
+   BIXOPLAY BLACK FRIDAY - FINAL UI FIX
+========================================== */
+
+/* Floating position */
+.bf2026-widget {
+  position: fixed;
+  top: auto;
+  right: auto;
+  bottom: 22px;
+  left: 15px;
+  transform: none;
+  z-index: 90;
+
+  width: min(365px, calc(100vw - 30px));
+  max-width: 365px;
+
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+
+  font-family: Inter, Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Animated offer strip */
+.bf2026-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  width: 100%;
+  max-width: 100%;
+  min-height: 60px;
+
+  padding: 12px 14px;
+  border: 1px solid #ff6e80;
+  border-radius: 15px;
+
+  background: linear-gradient(
+    110deg,
+    #940a20,
+    #ed2941,
+    #a70b27
+  );
+
+  color: #fff;
+  box-shadow: 0 9px 35px rgba(237,41,65,.35);
+  cursor: pointer;
+  text-align: left;
+
+  animation: bfSlideInOut 11s ease-in-out infinite;
+}
+
+.bf2026-toggle[aria-expanded="true"] {
+  animation: none;
+  transform: translateX(0);
+}
+
+.bf2026-alert {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.bf2026-toggle strong {
+  font-size: 11px;
+  color: #ffe69c;
+  white-space: nowrap;
+}
+
+.bf2026-toggle-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+
+  width: 27px;
+  height: 27px;
+
+  border-radius: 50%;
+  background: #ffffff30;
+  font-size: 23px;
+  line-height: 1;
+}
+
+/* Slide in, stay visible, slide out */
+@keyframes bfSlideInOut {
+  0%, 7% {
+    transform: translateX(calc(-100% - 25px));
+    opacity: 0;
+  }
+
+  15%, 78% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  90%, 100% {
+    transform: translateX(calc(-100% - 25px));
+    opacity: 0;
+  }
+}
+
+/* Expanded offer panel */
+.bf2026-details[hidden] {
+  display: none !important;
+}
+
+.bf2026-details {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  max-height: min(72dvh, 630px);
+
+  margin: 0;
+  padding: 0 0 12px;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background: #0b1629;
+  color: #fff;
+
+  border: 1px solid #e33a51;
+  border-radius: 22px;
+
+  box-shadow:
+    0 20px 55px rgba(0,0,0,.4),
+    0 0 25px rgba(255,52,61,.18);
+
+  box-sizing: border-box;
+}
+
+/* Panel header */
+.bf2026-header {
+  position: relative;
+  padding: 23px 40px 20px 16px;
+  text-align: center;
+
+  background: linear-gradient(
+    130deg,
+    #101c35,
+    #541226
+  );
+}
+
+.bf2026-exclusive {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffd17b;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.bf2026-header h2 {
+  margin: 8px 0;
+  font-size: clamp(25px, 6vw, 32px);
+  font-weight: 900;
+  color: #fff;
+}
+
+.bf2026-header h2 em {
+  color: #ff4056;
+  font-style: normal;
+}
+
+.bf2026-header p {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #e4d4dc;
+}
+
+#bf2026Close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+
+  border: none;
+  border-radius: 50%;
+  background: #ffffff22;
+
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Countdown */
+.bf2026-timer {
+  display: block;
+  text-align: center;
+  padding: 17px 14px 8px;
+
+  color: #ffd17b;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.bf2026-countdown {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.bf2026-countdown > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
+  padding: 9px 3px;
+  background: #1b2b43;
+  border-radius: 9px;
+}
+
+.bf2026-countdown strong {
+  font-size: 21px;
+  color: white;
+}
+
+.bf2026-countdown small {
+  font-size: 9px;
+  color: #b1bfd3;
+}
+
+/* Pricing cards - important fix */
+.bf2026-offers {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+
+  padding: 13px;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.bf2026-plan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+  width: 100%;
+  min-width: 0;
+
+  padding: 16px 13px;
+  border-radius: 13px;
+
+  background: #192940;
+  border: 1px solid #354761;
+  color: #fff;
+  text-decoration: none;
+
+  box-sizing: border-box;
+  transition: .25s;
+}
+
+/* Plan duration and old price */
+.bf2026-plan > span:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+
+  min-width: 0;
+  font-size: 13px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.bf2026-plan small {
+  display: block;
+  font-size: 12px;
+  color: #9daabd;
+}
+
+.bf2026-plan del {
+  color: #a8b3c5;
+  text-decoration-color: #ff485b;
+  text-decoration-thickness: 2px;
+}
+
+/* New price */
+.bf2026-plan > strong {
+  font-size: 28px;
+  font-weight: 900;
+  color: #fff;
+  white-space: nowrap;
+  margin-left: auto;
+}
+
+.bf2026-plan-arrow {
+  flex-shrink: 0;
+  color: #ff5269;
+  font-size: 23px;
+}
+
+/* Featured 3-year plan */
+.bf2026-best {
+  border-color: #ffc15c;
+  background: linear-gradient(
+    115deg,
+    #2c2939,
+    #392a31
+  );
+}
+
+.bf2026-best > strong {
+  color: #ffd166;
+}
+
+.bf2026-plan:hover {
+  background: #283a54;
+  border-color: #ff5269;
+  transform: translateY(-2px);
+}
+
+/* Referral offer */
+.bf2026-gift {
+  margin: 5px 13px;
+  padding: 13px 10px;
+  border-radius: 11px;
+
+  background: #263049;
+  color: #ffdf9b;
+
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.bf2026-note {
+  margin: 12px 15px 4px;
+  color: #b2bfd3;
+  font-size: 11px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .bf2026-widget {
+    left: 10px;
+    bottom: 12px;
+    width: min(340px, calc(100vw - 20px));
+  }
+
+  .bf2026-toggle {
+    padding: 11px;
+    min-height: 52px;
+  }
+
+  .bf2026-alert {
+    font-size: 11px;
+  }
+
+  .bf2026-details {
+    max-height: 68dvh;
+  }
+
+  .bf2026-plan > strong {
+    font-size: 25px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bf2026-toggle {
+    animation: none;
+    transform: none;
+    opacity: 1;
+  }
+}
+
 
 
    
