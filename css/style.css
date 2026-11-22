@@ -221,3 +221,942 @@ html[data-theme=light] .hero-scroll span{color:#101322}
     transition: none;
   }
 }
+
+/* =========================================
+   BIXOPLAY PREMIUM PRICING DESIGN
+========================================= */
+
+.pricing-section {
+  background: var(--bg);
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 1180px;
+  margin: 0 auto;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.price-card,
+.price-card.pro {
+  padding: 0;
+  border-radius: 26px;
+  overflow: hidden;
+  background: #071a35;
+  border: 1px solid rgba(75, 150, 255, 0.4);
+  box-shadow: 0 25px 65px rgba(0, 0, 0, 0.25);
+  transform: none;
+}
+
+.price-card.pro {
+  background: #39070e;
+  border-color: rgba(255, 55, 65, 0.5);
+}
+
+.price-card:hover,
+.price-card.pro:hover {
+  transform: translateY(-8px);
+}
+
+/* Header */
+
+.plan-hero {
+  position: relative;
+  min-height: 205px;
+  padding: 30px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 80% 15%,
+      rgba(79, 166, 255, 0.65),
+      transparent 50%
+    ),
+    linear-gradient(135deg, #03152d, #0d4582);
+}
+
+.pro .plan-hero {
+  background:
+    radial-gradient(
+      circle at 85% 25%,
+      rgba(255, 65, 65, 0.6),
+      transparent 50%
+    ),
+    linear-gradient(135deg, #270309, #970d1b);
+}
+
+/* Decorative mountain-inspired shape */
+
+.standard .plan-hero::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 65%;
+  height: 110px;
+  background: rgba(170, 215, 255, 0.15);
+  clip-path: polygon(
+    0 100%, 30% 20%, 45% 55%,
+    70% 0, 100% 100%
+  );
+}
+
+.pro .plan-hero::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 65%;
+  height: 110px;
+  background: rgba(255, 130, 130, 0.13);
+  clip-path: polygon(
+    0 100%, 20% 55%, 45% 10%,
+    70% 45%, 100% 0, 100% 100%
+  );
+}
+
+.plan-brand {
+  position: relative;
+  z-index: 1;
+  color: #d8e8ff;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.plan-hero h3 {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: clamp(35px, 4vw, 52px);
+  font-weight: 900;
+  margin: 12px 0;
+}
+
+.plan-hero p {
+  position: relative;
+  z-index: 1;
+  color: #e2e9f5;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.plan-crown {
+  color: #ffd166;
+}
+
+/* Content Statistics */
+
+.plan-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 25px 10px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.plan-stats > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  padding: 0 6px;
+}
+
+.plan-stats > div:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.plan-stat-icon {
+  font-size: 28px;
+  color: #fff;
+}
+
+.plan-stats strong {
+  color: #fff;
+  font-size: clamp(18px, 2.5vw, 28px);
+  font-weight: 900;
+}
+
+.plan-stats small {
+  color: #cbd5e1;
+  font-size: 11px;
+}
+
+/* White Feature Strip */
+
+.plan-feature-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  padding: 18px 10px;
+  background: #fff;
+}
+
+.pro .plan-feature-strip {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.plan-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px;
+  text-align: center;
+  color: #182235;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.plan-feature:not(:last-child) {
+  border-right: 1px solid #d4d9e2;
+}
+
+.plan-feature-icon {
+  color: #1556a0;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.pro .plan-feature-icon {
+  color: #c51f30;
+}
+
+/* Pricing Durations */
+
+.plan-bottom {
+  padding: 24px 18px 28px;
+}
+
+.plan-choose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.plan-choose span {
+  height: 1px;
+  flex: 1;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.plan-durations {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.plan-duration {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  padding: 8px;
+  color: #fff;
+}
+
+.plan-duration:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.plan-duration > span {
+  font-size: 14px;
+  color: #e5e7eb;
+}
+
+.plan-amount {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.plan-amount small {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.plan-amount strong {
+  font-size: clamp(25px, 3vw, 38px);
+  font-weight: 900;
+}
+
+.plan-subscribe {
+  width: 100%;
+  padding: 11px 5px;
+  border: 0;
+  border-radius: 10px;
+  background: #1680e8;
+  color: #fff;
+  font-weight: 800;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.pro .plan-subscribe {
+  background: #ed2939;
+}
+
+.plan-subscribe:hover {
+  background: #25d366;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+
+@media (max-width: 950px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 570px;
+  }
+}
+
+@media (max-width: 480px) {
+  .plan-hero {
+    min-height: 170px;
+    padding: 24px;
+  }
+
+  .plan-stats {
+    padding: 20px 5px;
+  }
+
+  .plan-stats strong {
+    font-size: 18px;
+  }
+
+  .plan-stats small {
+    font-size: 9px;
+  }
+
+  .plan-feature-strip,
+  .pro .plan-feature-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .plan-feature {
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .plan-bottom {
+    padding: 20px 8px;
+  }
+
+  .plan-duration {
+    padding: 6px 4px;
+  }
+
+  .plan-amount strong {
+    font-size: 25px;
+  }
+
+  .plan-subscribe {
+    font-size: 10px;
+    padding: 10px 3px;
+  }
+}
+
+/* BIXOPLAY SEO CONTENT SECTION */
+
+.bixoplay-about {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.bixoplay-about .center-heading p {
+  max-width: 850px;
+  margin: 20px auto;
+  line-height: 1.9;
+}
+
+.bixoplay-seo-content {
+  max-width: 950px;
+  margin: 35px auto 0;
+  padding: 35px;
+  border-radius: 20px;
+  background: rgba(52, 121, 210, 0.07);
+  border: 1px solid rgba(52, 121, 210, 0.18);
+}
+
+.bixoplay-seo-content h3 {
+  font-size: 21px;
+  margin: 25px 0 12px;
+  color: var(--text, inherit);
+}
+
+.bixoplay-seo-content p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: var(--muted, inherit);
+}
+
+.bixoplay-seo-content .btn {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .bixoplay-seo-content {
+    padding: 22px;
+  }
+
+  .bixoplay-seo-content h3 {
+    font-size: 18px;
+  }
+}
+
+/* ==========================================
+   BIXOPLAY PREMIUM CINEMATIC HERO
+========================================== */
+
+.bix-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 45px;
+  min-height: 100svh;
+  padding: 120px 7vw 85px;
+  isolation: isolate;
+}
+
+.bix-hero .hero-content {
+  max-width: 700px;
+  width: 100%;
+  z-index: 3;
+}
+
+.bix-hero .hero h1,
+.bix-hero h1 {
+  font-size: clamp(46px, 5.4vw, 84px);
+  line-height: 1.05;
+}
+
+.bix-hero .hero-content p {
+  max-width: 530px;
+  line-height: 1.7;
+}
+
+.bix-hero .hero-fallback,
+.bix-hero .hero-overlay {
+  z-index: -1;
+}
+
+/* Showcase Container */
+
+.bix-showcase {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 590px;
+  margin-inline: auto;
+  padding: 45px 10px;
+  animation: bixEntrance 1s ease both;
+}
+
+.bix-glow {
+  position: absolute;
+  width: 95%;
+  height: 85%;
+  top: 7%;
+  left: 3%;
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      ellipse at 35% 40%,
+      rgba(52,121,210,.32),
+      transparent 65%
+    ),
+    radial-gradient(
+      ellipse at 75% 65%,
+      rgba(255,52,61,.22),
+      transparent 65%
+    );
+  filter: blur(40px);
+  animation: bixGlow 6s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+/* Main Cinematic Screen */
+
+.bix-screen {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 26px;
+  border: 1px solid rgba(130,185,255,.4);
+  background: #08162c;
+  box-shadow:
+    0 35px 80px rgba(0,0,0,.35),
+    0 0 45px rgba(52,121,210,.15);
+  transform: perspective(1200px) rotateY(-5deg);
+  transition: transform .5s, box-shadow .5s;
+}
+
+.bix-screen:hover {
+  transform: perspective(1200px) rotateY(0deg)
+    translateY(-6px);
+  box-shadow:
+    0 40px 90px rgba(0,0,0,.4),
+    0 0 55px rgba(52,121,210,.25);
+}
+
+.bix-screen-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 19px 23px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.bix-brand {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 4px;
+}
+
+.bix-screen-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ff343d;
+  box-shadow: 0 0 16px #ff343d;
+}
+
+/* Main Screen Content */
+
+.bix-screen-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 17px;
+  min-height: 320px;
+  padding: 38px 20px;
+  background:
+    radial-gradient(
+      circle at 25% 30%,
+      rgba(52,121,210,.5),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 75%,
+      rgba(255,52,61,.32),
+      transparent 48%
+    ),
+    linear-gradient(145deg,#071b38,#0a1024);
+}
+
+.bix-kicker {
+  color: #a9c9f7;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.bix-play-icon {
+  display: grid;
+  place-items: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: linear-gradient(135deg,#ff343d,#3479d2);
+  color: white;
+  font-size: 28px;
+  box-shadow: 0 0 45px rgba(255,52,61,.4);
+  animation: bixPulse 3s ease-in-out infinite;
+}
+
+.bix-screen-content h2 {
+  color: #fff;
+  font-size: clamp(26px, 3vw, 39px);
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.bix-screen-content h2 span {
+  display: block;
+  background: linear-gradient(90deg,#76b5ff,#ff6c76);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.bix-screen-content p {
+  color: #cbd8ed !important;
+  font-size: 13px !important;
+  margin: 0 !important;
+}
+
+/* Category Cards */
+
+.bix-screen-bottom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 17px;
+  background: #071427;
+}
+
+.bix-mini-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  padding: 17px 8px;
+  border: 1px solid rgba(120,170,240,.2);
+  border-radius: 14px;
+  background: rgba(52,121,210,.1);
+  color: #fff;
+  transition: .3s;
+}
+
+.bix-mini-card span {
+  font-size: 27px;
+  color: #8abaff;
+}
+
+.bix-mini-card strong {
+  font-size: 12px;
+}
+
+.bix-mini-card:hover {
+  background: rgba(52,121,210,.22);
+  transform: translateY(-4px);
+}
+
+/* Floating Glass Cards */
+
+.bix-floating {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 19px;
+  border: 1px solid rgba(145,190,255,.35);
+  border-radius: 17px;
+  background: rgba(11,30,59,.88);
+  backdrop-filter: blur(16px);
+  color: #fff;
+  box-shadow: 0 15px 35px rgba(0,0,0,.25);
+  animation: bixFloat 5s ease-in-out infinite;
+}
+
+.bix-floating-top {
+  top: 8px;
+  right: -15px;
+}
+
+.bix-floating-bottom {
+  bottom: 24px;
+  left: -22px;
+  animation-delay: -2.5s;
+}
+
+.bix-floating-icon {
+  display: grid;
+  place-items: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 11px;
+  background: linear-gradient(135deg,#3479d2,#ff343d);
+  font-size: 21px;
+}
+
+.bix-floating strong,
+.bix-floating small {
+  display: block;
+}
+
+.bix-floating strong {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.bix-floating small {
+  font-size: 10px;
+  color: #a8bddb;
+}
+
+.bix-showcase-caption {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+/* Animations */
+
+@keyframes bixEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bixFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes bixPulse {
+  0%, 100% {
+    box-shadow: 0 0 25px rgba(255,52,61,.3);
+  }
+  50% {
+    box-shadow: 0 0 55px rgba(255,52,61,.65);
+  }
+}
+
+@keyframes bixGlow {
+  from { opacity: .5; transform: scale(.9); }
+  to { opacity: 1; transform: scale(1.1); }
+}
+
+/* Responsive */
+
+@media (max-width: 1100px) {
+  .bix-hero {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding-top: 130px;
+  }
+
+  .bix-hero .hero-content {
+    max-width: 760px;
+  }
+
+  .bix-showcase {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 600px) {
+  .bix-hero {
+    padding: 110px 20px 75px;
+    gap: 15px;
+  }
+
+  .bix-hero h1 {
+    font-size: clamp(40px, 11vw, 56px);
+  }
+
+  .bix-showcase {
+    padding: 35px 10px;
+    width: 100%;
+  }
+
+  .bix-screen {
+    transform: none;
+    border-radius: 18px;
+  }
+
+  .bix-screen:hover {
+    transform: none;
+  }
+
+  .bix-screen-content {
+    min-height: 240px;
+    padding: 25px 12px;
+  }
+
+  .bix-floating {
+    padding: 9px 11px;
+  }
+
+  .bix-floating-top {
+    right: 0;
+  }
+
+  .bix-floating-bottom {
+    left: 0;
+    bottom: 5px;
+  }
+
+  .bix-floating-icon {
+    width: 29px;
+    height: 29px;
+    font-size: 16px;
+  }
+
+  .bix-floating strong {
+    font-size: 10px;
+  }
+
+  .bix-floating small {
+    font-size: 8px;
+  }
+
+  .bix-showcase-caption {
+    font-size: 8px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bix-showcase,
+  .bix-floating,
+  .bix-play-icon,
+  .bix-glow {
+    animation: none;
+  }
+}
+
+/* BIXOPLAY ANIMATED BRAND */
+
+.bix-animated-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1px, .4vw, 5px);
+  width: 100%;
+  white-space: nowrap;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(31px, 4.1vw, 66px);
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.bix-animated-brand span {
+  display: inline-block;
+  color: #ffffff;
+  opacity: 0;
+  animation: bixLetterReveal 6s infinite;
+  animation-delay: calc(var(--i) * .13s);
+  text-shadow: 0 0 22px rgba(52,121,210,.4);
+}
+
+.bix-animated-brand span:nth-child(n+5) {
+  color: #ff343d;
+}
+
+.bix-brand-line {
+  width: 0;
+  height: 3px;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    #3479d2,
+    #ff343d
+  );
+  box-shadow: 0 0 22px rgba(255,52,61,.45);
+  animation: bixLineReveal 6s infinite;
+}
+
+.bix-brand-tagline {
+  color: #ffffff !important;
+  font-size: 13px !important;
+  font-weight: 800;
+  letter-spacing: 4px;
+  text-align: center;
+  margin: 0 !important;
+  animation: bixTaglineReveal 6s infinite;
+}
+
+.bix-brand-subtitle {
+  color: #a7bddc;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Letter Animation */
+
+@keyframes bixLetterReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(25px) scale(.85);
+    filter: blur(8px);
+  }
+
+  18%, 78% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+
+  95%, 100% {
+    opacity: 0;
+    transform: translateY(-10px);
+    filter: blur(5px);
+  }
+}
+
+/* Glowing Line */
+
+@keyframes bixLineReveal {
+  0%, 10% { width: 0; }
+  28%, 80% { width: 65%; }
+  95%, 100% { width: 0; }
+}
+
+/* Tagline Reveal */
+
+@keyframes bixTaglineReveal {
+  0%, 15% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  30%, 80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  95%, 100% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+@media (max-width: 600px) {
+  .bix-animated-brand {
+    font-size: clamp(27px, 8vw, 45px);
+    letter-spacing: -1px;
+  }
+
+  .bix-brand-tagline {
+    font-size: 10px !important;
+    letter-spacing: 2px;
+  }
+
+  .bix-brand-subtitle {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bix-animated-brand span,
+  .bix-brand-line,
+  .bix-brand-tagline {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  .bix-brand-line {
+    width: 65%;
+  }
+}
