@@ -2,29 +2,99 @@
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Welcome to BIXOPLAY, your destination for digital entertainment! We offer a variety of entertainment services and flexible subscription plans designed to provide an enjoyable and convenient viewing experience. Discover our latest offers, explore our services, and stay updated with everything new in the world of entertainment. Follow us and learn more through our official website at bixoplay.net.">
-  <title>BixoPlay</title>
+
+
+<!-- BIXOPLAY SEO -->
+<title>BIXOPLAY</title>
+
+<meta
+  name="description"
+  content="Discover BIXOPLAY Standard and Pro subscription plans. Explore live TV, movies, series, sports, supported devices, plan features, pricing, and customer support."
+>
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://bixoplay.net/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BIXOPLAY">
+<meta property="og:url" content="https://bixoplay.net/">
+<meta
+  property="og:title"
+  content="BIXOPLAY | Entertainment & Subscription Plans"
+>
+<meta
+  property="og:description"
+  content="Explore BIXOPLAY entertainment services, Standard and Pro plans, supported devices, features, and subscription support."
+>
+<meta
+  property="og:image"
+  content="https://bixoplay.net/assets/images/company-logo.png"
+>
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary">
+<meta
+  name="twitter:title"
+  content="BIXOPLAY | Entertainment & Subscription Plans"
+>
+<meta
+  name="twitter:description"
+  content="Explore BIXOPLAY subscription plans, entertainment features, and customer support."
+>
+
+  <title>BixoPlay</title><link rel="icon" href="assets/images/company-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/responsive.css"><link rel="stylesheet" href="css/animations.css">
-  <link
-  
-  type="image/png"
-  sizes="96x96"
-  href="/assets/images/company-logo.png"
->
-<meta name="application-name" content="BIXOPLAY">
 
-<meta property="og:site_name" content="BIXOPLAY">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "BIXOPLAY",
-  "alternateName": "BIXOPLAY Official",
-  "url": "https://bixoplay.net/"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://bixoplay.net/#organization",
+      "name": "BIXOPLAY",
+      "url": "https://bixoplay.net/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://bixoplay.net/assets/images/company-logo.png"
+      },
+      "description": "BIXOPLAY provides information about entertainment subscription plans, live TV, movies, series, sports, device compatibility, and customer support."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bixoplay.net/#website",
+      "name": "BIXOPLAY",
+      "url": "https://bixoplay.net/",
+      "publisher": {
+        "@id": "https://bixoplay.net/#organization"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bixoplay.net/#webpage",
+      "url": "https://bixoplay.net/",
+      "name": "BIXOPLAY | Entertainment & Subscription Plans",
+      "description": "Explore BIXOPLAY Standard and Pro plans, entertainment features, device compatibility, and subscription support.",
+      "isPartOf": {
+        "@id": "https://bixoplay.net/#website"
+      },
+      "about": {
+        "@id": "https://bixoplay.net/#organization"
+      },
+      "inLanguage": "en"
+    }
+  ]
 }
 </script>
+
+
+
+
 
 </head>
 <body>
@@ -38,11 +108,197 @@
 </header>
 <div class="mobile-nav" id="mobileNav"><a href="#home">Home</a><a href="#movies">Movies</a><a href="#series">Series</a><a href="#live">Live TV</a><a href="#sports">Sports</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
 
-<section class="hero" id="home">
-  <video class="hero-video" autoplay muted loop playsinline poster="assets/images/hero-poster.jpg"><source src="assets/videos/hero.mp4" type="video/mp4"></video>
-  <div class="hero-fallback"></div><div class="hero-overlay"></div>
-  <div class="hero-content reveal"><span class="eyebrow">BIXOPLAYER ORIGINAL EXPERIENCE</span><h1>Your Next <em>Story</em> Starts Here</h1><p>Watch. Discover. Feel. Repeat.</p><div class="hero-actions"><button class="btn btn-primary" id="watchNow">▶ Watch Now</button><a class="btn btn-secondary" href="#pricing">Explore Plans</a></div><div class="hero-meta"><span>4K Ultra HD</span><span>•</span><span>Dolby Atmos</span><span>•</span><span>Multi-device</span></div></div>
-  <div class="hero-scroll">Scroll to explore <span>↓</span></div>
+
+<section class="hero bix-hero" id="home">
+
+  <div class="hero-fallback"></div>
+  <div class="hero-overlay"></div>
+
+  <!-- LEFT: Main Content -->
+  <div class="hero-content reveal">
+
+    <span class="eyebrow">
+      THE OFFICIAL BIXOPLAY EXPERIENCE
+    </span>
+
+    <h1>
+      Your Next
+      <em>Story</em>
+      Starts Here
+    </h1>
+
+    <p>
+      Discover live TV, movies, series and sports
+      entertainment with BIXOPLAY.
+    </p>
+
+    <div class="hero-actions">
+      <button class="btn btn-primary" id="watchNow">
+        ▶ Watch Now
+      </button>
+
+      <a class="btn btn-secondary" href="#pricing">
+        Explore Plans
+      </a>
+    </div>
+
+    <div class="hero-meta">
+      <span>Live TV</span>
+      <span>•</span>
+      <span>Movies & Series</span>
+      <span>•</span>
+      <span>Multi-device</span>
+    </div>
+
+  </div>
+
+  <!-- RIGHT: Premium Showcase -->
+  <div class="bix-showcase">
+
+    <div class="bix-glow"></div>
+
+    <div class="bix-floating bix-floating-top">
+      <span class="bix-floating-icon">✦</span>
+      <div>
+        <strong>Discover More</strong>
+        <small>Entertainment in one place</small>
+      </div>
+    </div>
+
+    <div class="bix-screen">
+
+      <div class="bix-screen-top">
+        <span class="bix-brand">BIXOPLAY</span>
+        <span class="bix-screen-dot"></span>
+      </div>
+
+      
+<div class="bix-screen-content">
+
+  <span class="bix-kicker">
+    THE BIXOPLAY EXPERIENCE
+  </span>
+
+  <div class="bix-animated-brand"
+       aria-label="BIXOPLAY">
+
+    <span style="--i:0">B</span>
+    <span style="--i:1">I</span>
+    <span style="--i:2">X</span>
+    <span style="--i:3">O</span>
+    <span style="--i:4">P</span>
+    <span style="--i:5">L</span>
+    <span style="--i:6">A</span>
+    <span style="--i:7">Y</span>
+
+  </div>
+
+  <div class="bix-brand-line"></div>
+
+  <p class="bix-brand-tagline">
+    TIME WELL WATCHED
+  </p>
+
+  <span class="bix-brand-subtitle">
+    YOUR ENTERTAINMENT. YOUR WAY.
+  </span>
+
+</div>
+
+
+      <div class="bix-screen-bottom">
+
+        <div class="bix-mini-card">
+          <span>▣</span>
+          <strong>Live TV</strong>
+        </div>
+
+        <div class="bix-mini-card">
+          <span>◉</span>
+          <strong>Movies</strong>
+        </div>
+
+        <div class="bix-mini-card">
+          <span>▤</span>
+          <strong>Series</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="bix-floating bix-floating-bottom">
+      <span class="bix-floating-icon">★</span>
+      <div>
+        <strong>Standard & Pro</strong>
+        <small>Explore subscription plans</small>
+      </div>
+    </div>
+
+    <div class="bix-showcase-caption">
+      BIXOPLAY — TIME WELL WATCHED
+    </div>
+
+  </div>
+
+  <div class="hero-scroll">
+    Scroll to explore <span>↓</span>
+  </div>
+
+</section>
+
+
+<section class="section bixoplay-about" id="about-bixoplay">
+  <div class="center-heading">
+    <span class="eyebrow">DISCOVER BIXOPLAY</span>
+
+    <h2>
+      Discover BIXOPLAY Entertainment
+      and Subscription Plans
+    </h2>
+
+    <p>
+      BIXOPLAY is an entertainment subscription service
+      offering Standard and Pro plans. Explore information
+      about live TV, movies, TV series, sports entertainment,
+      device compatibility, and available subscription
+      options.
+    </p>
+  </div>
+
+  <div class="bixoplay-seo-content">
+    <h3>Choose the Right BIXOPLAY Plan</h3>
+
+    <p>
+      Compare BIXOPLAY Standard and Pro subscriptions
+      to find the plan that suits your entertainment
+      preferences. Review available durations, content
+      features, supported devices, and subscription prices
+      before making your decision.
+    </p>
+
+    <h3>Entertainment Across Your Devices</h3>
+
+    <p>
+      Explore entertainment options for compatible
+      Smart TVs, Android devices, and iOS devices.
+      Supported features and picture quality may vary
+      depending on your selected plan and device.
+    </p>
+
+    <h3>Subscription Information and Support</h3>
+
+    <p>
+      Visit our pricing section to compare subscription
+      options or contact BIXOPLAY customer support
+      through the official contact channels published
+      on this website.
+    </p>
+
+    <a class="btn btn-primary" href="#pricing">
+      Compare Subscription Plans
+    </a>
+  </div>
 </section>
 
 <section class="section" id="categories"><div class="section-heading reveal"><div><span class="eyebrow">EXPLORE</span><h2>Everything you love, <span>in one place.</span></h2></div><p>Live moments, cinematic stories, and the next thing you’ll binge.</p></div><div class="category-grid" id="categoryGrid"></div></section>
@@ -68,11 +324,31 @@
 <div class="modal" id="errorModal" aria-hidden="true"><div class="success-panel"><div class="error-icon">!</div><h2>Something went wrong</h2><p>Please try again or contact support.</p><div class="inline-actions"><button class="btn btn-primary" id="retryPayment">Try Again</button><a class="btn btn-ghost" id="errorSupport">Contact Support</a></div></div></div>
 <div class="modal" id="whatsappWelcomeModal" aria-hidden="true"><div class="success-panel whatsapp-welcome-panel"><div class="success-icon whatsapp-icon">💬</div><span class="eyebrow">BIXOPLAYER SUPPORT</span><h2>مرحبًا بك في BixoPlayer 👋</h2><p>نسعد بخدمتك عبر WhatsApp.<br><strong>خدمة عملاء 24 ساعة تعتني بك.</strong></p><div class="inline-actions"><a class="btn btn-primary" id="welcomeWhatsapp" target="_blank" rel="noopener">التواصل عبر WhatsApp</a><button class="btn btn-ghost" data-close="whatsappWelcomeModal">إغلاق</button></div></div></div>
 
-<a class="whatsapp-fab" id="floatingWhatsapp" href="#" aria-label="Chat on WhatsApp">☎</a>
+
+<a
+  class="whatsapp-fab"
+  id="floatingWhatsapp"
+  href="#"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat on WhatsApp"
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 32 32"
+    width="30"
+    height="30"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M16 .8A15.2 15.2 0 0 0 2.9 23.7L.8 31.2l7.7-2A15.2 15.2 0 1 0 16 .8zm0 27.6a12.3 12.3 0 0 1-6.3-1.7l-.5-.3-4.5 1.2 1.2-4.4-.3-.5A12.4 12.4 0 1 1 16 28.4zm6.8-9.3c-.4-.2-2.2-1.1-2.5-1.2-.3-.1-.6-.2-.8.2-.3.4-1 1.2-1.2 1.4-.2.3-.4.3-.8.1-.4-.2-1.6-.6-3-1.9-1.1-1-1.9-2.2-2.1-2.6-.2-.4 0-.6.2-.8l.6-.7.4-.6c.1-.2 0-.5 0-.7l-1.1-2.7c-.3-.7-.6-.6-.8-.6h-.7c-.3 0-.7.1-1 .5s-1.3 1.3-1.3 3.1 1.4 3.6c1.7 2.1 3.3 4.1 6.4 5.4 1.5.7 2.6 1 3.5 1.1 1.5.2 2.8.1 3.8-.1 1.2-.3 2.2-1.3 2.5-2.2.3-.9.3-1.7.2-1.8-.1-.2-.4-.3-.8-.5z"/>
+  </svg>
+</a>
+
 <div class="chatbot" id="chatbot"><div class="chat-window" id="chatWindow"><div class="chat-header"><div><strong>BixoPlayer Assistant</strong><span><i></i> Online</span></div><button class="close-btn" id="closeChat">×</button></div><div class="chat-messages" id="chatMessages"></div><div class="quick-actions" id="quickActions"></div><a class="chat-support-btn" id="chatWhatsappSupport" target="_blank" rel="noopener">💬 تواصل مع خدمة العملاء عبر WhatsApp</a><form class="chat-input" id="chatForm"><input id="chatInput" placeholder="Type your message…" autocomplete="off"><button aria-label="Send">➤</button></form></div><button class="chat-fab" id="chatFab" aria-label="Open BixoPlayer Assistant">💬</button></div>
 <div class="toast-container" id="toastContainer"></div>
 </div>
-  
+
 <!-- BIXOPLAY Official Notice Popup -->
 <div id="officialOverlay" class="official-overlay" hidden>
   <section
@@ -150,7 +426,7 @@
   </section>
 </div>
 
-<script src="/js/official-notice.js" defer></script>
+<script src="js/official-notice.js" defer></script>
 
 <script type="module" src="js/main.js"></script>
 </body></html>
