@@ -1311,3 +1311,79 @@ html[data-theme=light] .hero-scroll span{color:#101322}
 .bf2026-timer {
   text-align: center;
   padding: 17px 15
+}
+/* BLACK FRIDAY FLOATING SIDE TAB */
+
+.bf-side-tab {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 75;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 11px;
+  border-radius: 14px 0 0 14px;
+  background: linear-gradient(145deg, #87091b, #ff3449);
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-right: 0;
+  color: #fff;
+  text-decoration: none;
+  box-shadow:
+    0 10px 35px rgba(255, 52, 73, .35),
+    0 0 20px rgba(255, 52, 73, .18);
+  transition: padding .25s ease, box-shadow .25s ease;
+}
+
+.bf-side-tab:hover {
+  padding-right: 22px;
+  box-shadow: 0 12px 45px rgba(255, 52, 73, .55);
+}
+
+.bf-side-fire {
+  font-size: 21px;
+}
+
+.bf-side-label {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.bf-side-offer {
+  font-size: 9px;
+  font-weight: 800;
+  padding: 5px 7px;
+  border-radius: 20px;
+  background: #fff;
+  color: #a20d22;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .bf-side-tab {
+    top: 42%;
+    padding: 11px 8px;
+    gap: 5px;
+  }
+
+  .bf-side-label {
+    font-size: 9px;
+  }
+
+  .bf-side-offer {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bf-side-tab {
+    transition: none;
+  }
+}
+
+
+
+
+   
